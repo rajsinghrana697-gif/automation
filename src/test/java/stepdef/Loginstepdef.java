@@ -12,7 +12,7 @@ public class Loginstepdef {
         System.out.println("open the browser");
     }
 
-    @And("^enter thr url$")
+    @And("^enter the url$")
     public void enterThrUrl() {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("enter the url");
@@ -40,5 +40,6 @@ public class Loginstepdef {
     public void enterTheCredAnd(String arg0, String arg1) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("enter the cred <args0> <args1>+ agrs0 + agrs1");
+
     }
 }
