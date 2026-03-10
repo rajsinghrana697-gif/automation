@@ -1,9 +1,11 @@
 package stepdef;
 
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+
+import io.cucumber.java.PendingException;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class ForgetStepdefs {
 
@@ -53,7 +55,7 @@ public class ForgetStepdefs {
     @And("^enter the email\"([^\"]*)\"$")
     public void enterTheEmail(String arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        System.out.println("enter the email args0" );
+        System.out.println("enter the email args0");
     }
 
     @When("^user is clicking on the submit button$")
@@ -152,10 +154,17 @@ public class ForgetStepdefs {
     public void enterPasswordWithoutNumericValue() {
         System.out.println("enter password without numeric value");
 
+
     }
 
-    @Then("^user should see password policy message$")
+    @Then("user should see password policy message")
     public void userShouldSeePasswordPolicyMessage() {
-        System.out.println("user should see password policy message");
+        // Write code here that turns the phrase above into concrete actions
+    }
+
+    @And("close the browser")
+    public void closeTheBrowser() {
+        // Write code here that turns the phrase above into concrete actions
+
     }
 }
