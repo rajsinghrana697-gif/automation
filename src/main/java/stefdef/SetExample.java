@@ -9,6 +9,7 @@ public class SetExample {
         set.add("electricity");
         set.add("petrol");
         set.add("wastage");
+        set.add("electricity");
         System.out.println(set);
     }
 }
