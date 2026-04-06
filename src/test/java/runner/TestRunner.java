@@ -4,12 +4,9 @@ package runner;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
+
+
+@CucumberOptions(features = {"src/test/resources/features"}, glue= "stepdef",tags ="@moon")
 @RunWith(Cucumber.class)
-
-@CucumberOptions(features = {"src/test/resources/features"},
-        glue= "stepdef",tags ="@Background",
-        monochrome = true
-)
-
 public class TestRunner {
 }

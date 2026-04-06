@@ -14,6 +14,7 @@ public class You {
         public static void main(String[] args) {
 
                 WebDriver driver = new ChromeDriver();
+                
                 driver.manage().window().maximize();
                 driver.get("https://www.facebook.com/");
                 driver.findElement(By.xpath("//input[@name='email']")).sendKeys("rajsingh234@gmail.com");
